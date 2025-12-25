@@ -1,0 +1,13 @@
+.resume {
+  &__wrapper {
+    max-width: size(1000px);
+    margin: 0 auto;
+    padding: size(10px) size(50px) size(50px);
+    background-color: $background-section;
+    border-radius: $section-radius;
+  }
+}
+
+.resume .resume__title {
+  margin-bottom: size(40px);
+}
