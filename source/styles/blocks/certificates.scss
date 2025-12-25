@@ -1,0 +1,22 @@
+.certificates {
+  margin-bottom: size(80px);
+  display: flex;
+  flex-direction: column;
+  row-gap: size(50px);
+
+  &__list {
+    width: max-content;
+    margin: 0 auto;
+    padding: size(50px);
+    list-style: none;
+    background-color: $background-section;
+    border-radius: $section-radius;
+  }
+
+  &__link {
+    font-family: $ff-second;
+    line-height: 1.43;
+    text-decoration: none;
+    color: $color-second;
+  }
+}

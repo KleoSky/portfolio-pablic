@@ -1,0 +1,39 @@
+html {
+  width: 100%;
+}
+
+html {
+  font-size: clamp(calc(100% - 25%), size-desktop($fz-default), calc(100% + 100%));
+
+  @include vp-1439 {
+    font-size: size-desktop($fz-default);
+  }
+
+  @include vp-767 {
+    font-size: size-tablet($fz-tablet);
+  }
+
+  @include vp-319 {
+    font-size: size-mobile($fz-tablet);
+  }
+}
+
+body {
+  font-family: $ff-primary;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+  color: $color-main;
+  margin: 0;
+  width: 100%;
+  background: $background-main;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+img {
+  min-width: 100%;
+  height: auto;
+  line-height: 1;
+  object-fit: contain;
+}

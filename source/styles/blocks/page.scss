@@ -1,0 +1,10 @@
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: size(20px) size(40px);
+}
+
+.page__main {
+  flex-grow: 1;
+}

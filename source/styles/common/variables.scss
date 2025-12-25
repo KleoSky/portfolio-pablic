@@ -1,0 +1,25 @@
+// Colors
+$background-gadient-1:              #e1edce;
+$background-gadient-2:              #d8ecfe;
+$background-main:                   linear-gradient(135deg, $background-gadient-1 0%, $background-gadient-2 90%);
+$background-section:                #b1e0e3;
+$background-button:                 #a9fced;
+$color-main:                        #1f0f0f;
+$color-second:                      #000000;
+$color-liner:                       #444444;
+
+// Fonts
+$ff-primary:                        "Roboto Condensed", "Open Sans", sans-serif;
+$ff-extra:                          "Rubik Gemstones", "Google Sans Flex", sans-serif;
+$ff-second:                         "Playfair Display", "FF Meta Serif", serif;
+$fz-default:                        18px;
+$fz-tablet:                         16px;
+
+// Viewports
+$vp-320:                            320px;
+$vp-768:                            768px;
+$vp-1440:                           1440px;
+
+// Styles
+$section-radius:                    30px;
+$picture-radius:                    20px;

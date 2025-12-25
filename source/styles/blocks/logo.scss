@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: size(20px);
+
+  &__link {
+    border-radius: $picture-radius;
+  }
+
+  &__image {
+    min-width: size(50px);
+    height: size(50px);
+    border-radius: 20px;
+  }
+
+  &__text {
+    font-family: $ff-extra;
+    font-size: size(32px);
+    text-decoration: none;
+    color: inherit;
+  }
+}

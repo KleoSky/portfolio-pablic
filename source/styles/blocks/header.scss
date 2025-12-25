@@ -1,0 +1,15 @@
+.header {
+  margin-bottom: size(40px);
+  padding-bottom: size(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed $color-liner;
+
+  &__label {
+    font-family: $ff-extra;
+    font-size: size(48px);
+    margin: 0;
+    margin-right: 300px;
+  }
+}

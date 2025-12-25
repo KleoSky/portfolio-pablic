@@ -1,0 +1,60 @@
+.hero {
+  max-width: size(1000px);
+  margin: 0 auto size(40px);
+  padding: size(50px);
+  background-color: $background-section;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  row-gap: size(20px);
+  border-radius: $section-radius;
+
+  &__title,
+  &__picture {
+    will-change: opacity, transform;
+  }
+
+  &__title {
+    font-family: $ff-second;
+    max-width: size(850px);
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    animation: slideUp 1.8s ease forwards;
+  }
+
+  &__picture {
+    width: size(262px);
+    height: size(450px);
+    animation: scaleFromCenter 1.7s ease forwards;
+
+    img {
+      border-radius: $picture-radius;
+    }
+  }
+}
+
+@keyframes scaleFromCenter {
+  from {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

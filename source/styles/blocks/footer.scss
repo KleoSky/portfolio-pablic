@@ -1,0 +1,33 @@
+.footer {
+  &__wrapper {
+    font-family: $ff-second;
+    color: $color-second;
+    padding-bottom: size(40px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__note {
+    font-size: size(20px);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    text-underline-offset: size(5px);
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: size(25px);
+
+    a {
+      line-height: 1.43;
+      text-decoration-style: dashed;
+      text-decoration-thickness: 1px;
+      text-underline-offset: size(5px);
+      color: inherit;
+    }
+  }
+}

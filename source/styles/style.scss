@@ -1,0 +1,21 @@
+/* GLOBAL */
+@import "./common/variables";
+@import "./common/functions";
+@import "./common/mixins";
+@import "./common/global";
+@import "./common/fonts";
+
+/* BLOCKS */
+@import "./blocks/button";
+@import "./blocks/certificates";
+@import "./blocks/container";
+@import "./blocks/footer";
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/logo";
+@import "./blocks/page";
+@import "./blocks/project";
+@import "./blocks/projects";
+@import "./blocks/section-title";
+@import "./blocks/tech";
+@import "./blocks/visually-hidden";

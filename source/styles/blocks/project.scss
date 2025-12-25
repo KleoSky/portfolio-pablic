@@ -1,0 +1,91 @@
+.project {
+  padding: size(50px);
+  background-color: $background-section;
+  border-radius: $section-radius;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: repeat(2, 1fr);
+  gap: size(20px);
+
+  &__title {
+    font-family: $ff-extra;
+    font-size: size(32px);
+    font-weight: inherit;
+    margin: 0;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  &__card-content {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    align-self: center;
+  }
+
+  &__subtitle,
+  &__content {
+    max-width: size(550px);
+    line-height: 1.43;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    row-gap: size(18px);
+  }
+
+  &__actions-title {
+    font-size: size(20px);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__links {
+    display: flex;
+    gap: size(18px);
+  }
+
+  &__card-image {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+    img {
+      border-radius: $picture-radius;
+    }
+
+    &--one {
+      width: size(695px);
+      height: size(345px);
+    }
+
+    &--two {
+      width: size(679px);
+      height: size(288px);
+    }
+
+    &--three {
+      width: size(690px);
+      height: size(398px);
+    }
+
+    &--four {
+      width: size(601px);
+      height: size(379px);
+    }
+
+    &--five {
+      width: size(667px);
+      height: size(399px);
+    }
+
+    &--six {
+      width: size(700px);
+      height: size(370px);
+    }
+
+    &--seven {
+      width: size(700px);
+      height: size(399px);
+    }
+  }
+}
