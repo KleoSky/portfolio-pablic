@@ -1,4 +1,14 @@
 .projects {
+  display: flex;
+  flex-direction: column;
+  row-gap: size(40px);
+}
+
+.projects__wrapper.section-closed {
+  display: none;
+}
+
+.projects__wrapper.section-opened {
   margin-bottom: size(40px);
   display: flex;
   flex-direction: column;

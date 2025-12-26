@@ -1,4 +1,4 @@
-.section-title {
+.section-button {
   max-width: max-content;
   font-family: $ff-extra;
   font-size: size(36px);
@@ -8,4 +8,13 @@
   padding: size(15px);
   border: 2px dashed $color-liner;
   border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    border: 2px dashed transparent;
+    background-color: $background-button;
+  }
 }

@@ -28,6 +28,22 @@
       text-decoration-thickness: 1px;
       text-underline-offset: size(5px);
       color: inherit;
+      display: block;
+      transition: transform 0.3s ease;
+      will-change: transform;
+
+      &:hover,
+      &:focus,
+      &:focus-visible {
+        transform: rotate(3deg) translate(5px);
+      }
     }
+  }
+
+  &__contacts-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: size(8px);
   }
 }

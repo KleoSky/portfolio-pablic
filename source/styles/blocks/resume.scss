@@ -1,4 +1,9 @@
 .resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: size(40px);
+
   &__wrapper {
     max-width: size(1000px);
     margin: 0 auto;
@@ -6,8 +11,16 @@
     background-color: $background-section;
     border-radius: $section-radius;
   }
+
+  h3 {
+    font-family: $ff-second;
+  }
 }
 
-.resume .resume__title {
-  margin-bottom: size(40px);
+.resume__wrapper.section-closed {
+  display: none;
+}
+
+.resume__wrapper.section-opened {
+  display: block;
 }

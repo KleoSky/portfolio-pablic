@@ -5,6 +5,14 @@
 
   &__link {
     border-radius: $picture-radius;
+    transition: transform 0.3s ease;
+    will-change: transform;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      transform: rotate(-3deg) translate(5px);
+    }
   }
 
   &__image {
@@ -18,5 +26,13 @@
     font-size: size(32px);
     text-decoration: none;
     color: inherit;
+    transition: transform 0.3s ease;
+    will-change: transform;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      transform: rotate(3deg) translate(5px);
+    }
   }
 }

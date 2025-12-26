@@ -14,7 +14,15 @@
   border: 1px dashed $color-liner;
   border-radius: $picture-radius;
   box-shadow:
-      0 7px 18px -15px rgba(177, 224, 227, 0.04),
-      0 20px 20px 0 rgba(177, 224, 227, 0.05),
-      0 24px 19px -30px rgba(177, 224, 227, 0.25);
+    0 7px 18px -15px rgba(247, 247, 247, 0.04),
+    0 20px 20px 0 rgba(247, 247, 247, 0.05),
+    0 24px 19px -30px rgba(247, 247, 247, 0.25);
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    filter:
+      drop-shadow(5px 5px 5px rgba(143, 252, 104, 0.3)) hue-rotate(10deg);
+    border: 1px dashed transparent;
+  }
 }

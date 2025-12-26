@@ -2,6 +2,7 @@
   margin-bottom: size(80px);
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: size(50px);
 
   &__list {
@@ -16,7 +17,48 @@
   &__link {
     font-family: $ff-second;
     line-height: 1.43;
-    text-decoration: none;
     color: $color-second;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: opacity 0.5s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: size(-3px);
+      width: 100%;
+      height: 1px;
+      background: repeating-linear-gradient(
+        90deg,
+        currentColor,
+        currentColor 3px,
+        transparent 3px,
+        transparent 6px
+      );
+      clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+      transition: clip-path 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      opacity: 0.8;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:focus-visible::after {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
   }
+}
+
+.certificates__list.section-closed {
+  display: none;
+}
+
+.certificates__list.section-opened {
+  display: block;
 }

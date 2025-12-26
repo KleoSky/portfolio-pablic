@@ -27,7 +27,7 @@
   <div class="page__wrapper">
     <header class="page__header header">
       <div class="header__logo logo">
-        <a class="logo__link" href="resume.html" aria-label="Перейти на главную">
+        <a class="logo__link" href="https://t.me/KleoSky" aria-label="Перейти на главную">
           <img class="logo__image" src="images/kleo-logo.svg" width="50" height="50" alt="Логотип KleoSky">
         </a>
         <a class="logo__text" href="https://t.me/KleoSky">@KleoSky
@@ -43,7 +43,7 @@
           <h1 class="hero__title">
             Создаю адаптивные, продуманные интерфейсы с вниманием к деталям, доступности и производительности.
           </h1>
-          <div class="hero__picture">
+          <a class="hero__picture" href="https://github.com/KleoSky" aria-label="Перейти в GitHub Вероники Неброевой">
             <picture>
               <source media="(min-width: 1440px)" width="262" height="450" type="image/webp"
                 srcset="images/hero-image@1x.webp 1x, images/hero-image@2x.webp 2x">
@@ -58,11 +58,11 @@
               <img src="images/hero-image@1x.jpg" srcset="images/hero-image@2x.jpg 2x" width="320" height="520"
                 alt="Автор проектов Вероника Неброева">
             </picture>
-          </div>
+          </a>
         </section>
         <div class="main__resume resume">
-          <h2 class="resume__title section-title">Моё резюме</h2>
-          <div class="resume__wrapper">
+          <button class="resume__title section-button" type="button" data-section="resume-section">Моё резюме</button>
+          <div class="resume__wrapper section-content section-closed" id="resume-section">
             <section class="resume__specialization">
               <h3 class="resume__subtitle">Направление: Frontend Developer (HTML/CSS/JS)</h3>
               <p class="resume__location">Локация: Новосибирск</p>
@@ -72,7 +72,8 @@
               <h3 class="resume__subtitle">Hard Skills</h3>
               <dl>
                 <dt>Языки и основы</dt>
-                <dd>HTML5 (семантичная, доступная вёрстка), CSS3 (Flexbox, Grid, адаптивный и отзывчивый дизайн, CSS-анимации), JavaScript (ES6+)</dd>
+                <dd>HTML5 (семантичная, доступная вёрстка), CSS3 (Flexbox, Grid, адаптивный и отзывчивый дизайн,
+                  CSS-анимации), JavaScript (ES6+)</dd>
               </dl>
               <dl>
                 <dt>Инструменты и сборка</dt>
@@ -84,7 +85,8 @@
               </dl>
               <dl>
                 <dt>Дополнительно</dt>
-                <dd>Адаптивная и мобильная вёрстка, Оптимизация производительности, базовое понимание Node.js для настройки сборки</dd>
+                <dd>Адаптивная и мобильная вёрстка, Оптимизация производительности, базовое понимание Node.js для
+                  настройки сборки</dd>
               </dl>
             </section>
             <section class="resume__content">
@@ -95,19 +97,26 @@
                   <p class="resume__date">
                     <time datetime="2025-07-20">Июль 2025</time> - <time datetime="2025-10-05">Октябрь 2025</time>
                   </p>
-                  <p>Выполняла проекты под NDA. Разрабатывала отложенные по скроллу анимации, работала с новым для себя шаблонизатором, верстала сложные сетки</p>
+                  <p>Выполняла проекты под NDA. Разрабатывала отложенные по скроллу анимации, работала с новым для себя
+                    шаблонизатором, верстала сложные сетки</p>
                   <p>Интегрировала Swiper.js для реализации сложных кастомных слайдеров в проекте</p>
-                  <p>В последнем проекте Погнали, разрешённым для публикации и имеющимся в портфолио, реализовала кастомный модуль фильтрации</p>
+                  <p>В последнем проекте Погнали, разрешённым для публикации и имеющимся в портфолио, реализовала
+                    кастомный модуль фильтрации</p>
                 </div>
                 <div class="resume__experience-content">
                   <h4>Учебные проекты / Фриланс</h4>
                   <p class="resume__date">
                     <time datetime="2024-03-05">Март 2024</time> - <time datetime="2025-06-30">Июнь 2025</time>
                   </p>
-                  <p>Реализовала 7 полноценных, адаптивных лендингов и многостраничных сайтов с нуля по готовым макетам (Figma).</p>
-                  <p>Ключевой проект: Адаптивный сайт для digital-агентства в рамках Чемпионата по вёрстке, выполненный по реальному продакшн-макету, со сложными сетками, анимациями и кастомным слайдером. Самостоятельно решила проблемы публикации на GitHub Pages и конфликтов стилей в сборке.</p>
-                  <p>Написала скрипты для интерактивных элементов: выпадающие меню, модальные окна, валидация форм, табы — с учётом доступности (ARIA)</p>
-                  <p>Адаптировала и переносила готовые проекты в разные среды сборки (Gulp, Vite), находя и устраняя конфликты зависимостей</p>
+                  <p>Реализовала 7 полноценных, адаптивных лендингов и многостраничных сайтов с нуля по готовым макетам
+                    (Figma).</p>
+                  <p>Ключевой проект: Адаптивный сайт для digital-агентства в рамках Чемпионата по вёрстке, выполненный
+                    по реальному продакшн-макету, со сложными сетками, анимациями и кастомным слайдером. Самостоятельно
+                    решила проблемы публикации на GitHub Pages и конфликтов стилей в сборке.</p>
+                  <p>Написала скрипты для интерактивных элементов: выпадающие меню, модальные окна, валидация форм, табы
+                    — с учётом доступности (ARIA)</p>
+                  <p>Адаптировала и переносила готовые проекты в разные среды сборки (Gulp, Vite), находя и устраняя
+                    конфликты зависимостей</p>
                   <p>Настроила полный пайплайн публикации проектов на GitHub Pages с автоматической сборкой</p>
                 </div>
                 <div class="resume__experience-content">
@@ -117,7 +126,8 @@
                     <time datetime="2024-03-05">Март 2024</time> - <time datetime="2025-06-30">Июнь 2025</time>
                   </p>
                   <p>Интенсивная практика: 1400+ часов кода, около 10 проектов и 100+ заданий с код-ревью</p>
-                  <p>Освоила полный цикл: от вёрстки (HTML/CSS) и программирования (JavaScript) до работы с системой контроля версий (Git) и сборщиками (Webpack, Gulp, Vite)</p>
+                  <p>Освоила полный цикл: от вёрстки (HTML/CSS) и программирования (JavaScript) до работы с системой
+                    контроля версий (Git) и сборщиками (Webpack, Gulp, Vite)</p>
                   <p>Выполнила 2 дипломных проекта (адаптивные сайты с интерактивом), защитила перед комиссией</p>
                 </div>
               </div>
@@ -126,361 +136,381 @@
               <h3 class="resume__subtitle">Soft Skills</h3>
               <dl>
                 <dt>Настойчивость в решении задач</dt>
-                <dd>Самостоятельно разбираюсь со сложными багами, не бросаю задачи на полпути. Люблю кодовые "квесты"</dd>
+                <dd>Самостоятельно разбираюсь со сложными багами, не бросаю задачи на полпути. Люблю кодовые "квесты"
+                </dd>
               </dl>
               <dl>
                 <dt>Внимание к деталям</dt>
-                <dd>Скрупулёзно слежу за соответствием макету (Pixel Perfect), семантикой, доступностью интерфейсов и чистотой кода</dd>
+                <dd>Скрупулёзно слежу за соответствием макету (Pixel Perfect), семантикой, доступностью интерфейсов и
+                  чистотой кода</dd>
               </dl>
               <dl>
                 <dt>Быстрая обучаемость и адаптивность</dt>
-                <dd>Освоила фронтенд с нуля за полтора года. Легко адаптируюсь к новым инструментам и процессам в команде (как показала стажировка)</dd>
+                <dd>Освоила фронтенд с нуля за полтора года. Легко адаптируюсь к новым инструментам и процессам в
+                  команде (как показала стажировка)</dd>
               </dl>
               <dl>
                 <dt>Проактивность и самостоятельность</dt>
-                <dd>Умею и люблю работать самостоятельно, но ценю обратную связь. Все проекты в портфолио — результат самостоятельной работы и поиска решений</dd>
+                <dd>Умею и люблю работать самостоятельно, но ценю обратную связь. Все проекты в портфолио — результат
+                  самостоятельной работы и поиска решений</dd>
               </dl>
             </section>
           </div>
         </div>
         <div class="main__projects projects">
-          <h2 class="projects__title section-title">Мои проекты</h2>
-          <section class="projects__card project">
-            <h3 class="project__title">CatEnergy</h3>
-            <div class="project__card-content">
-              <div class="project__header">
-                <p class="project__subtitle">Первый опыт адаптивной вёрстки, сложного позиционирования</p>
-                <p class="project__date">
-                  Выполняла c <time datetime="2025-07-29">29 июля</time> по <time datetime="2025-09-30">30 сентября 2024
-                    года</time>
-                </p>
-              </div>
-              <div class="project__meta tech">
-                <h4 class="tech__title">Используемые технологии:</h4>
-                <ul class="tech__list">
-                  <li class="tech__item">HTML5</li>
-                  <li class="tech__item">CSS3</li>
-                  <li class="tech__item">JavaScript</li>
-                </ul>
-              </div>
-              <div class="project__content">
-                <p>Адаптивная вёрстка по макету Figma.</p>
-              </div>
-              <div class="project__actions">
-                <h4 class="project__actions-title">Ссылки на проект:</h4>
-                <div class="project__links">
-                  <a class="project__link button" href="https://kleosky.github.io/2513873-cat-energy-32/" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-                  <a class="project__link button" href="https://github.com/KleoSky/2513873-cat-energy-32" target="_blank" rel="noopener noreferrer">Исходный код</a>
+          <button class="projects__title section-button" type="button" data-section="projects-section">Мои проекты</button>
+          <div class="projects__wrapper section-content section-closed" id="projects-section">
+            <section class="projects__card project scroll-section">
+              <h3 class="project__title">CatEnergy</h3>
+              <div class="project__card-content">
+                <div class="project__header">
+                  <p class="project__subtitle">Первый опыт адаптивной вёрстки, сложного позиционирования</p>
+                  <p class="project__date">
+                    Выполняла c <time datetime="2025-07-29">29 июля</time> по <time datetime="2025-09-30">30 сентября 2024
+                      года</time>
+                  </p>
+                </div>
+                <div class="project__meta tech">
+                  <h4 class="tech__title">Используемые технологии:</h4>
+                  <ul class="tech__list">
+                    <li class="tech__item">HTML5</li>
+                    <li class="tech__item">CSS3</li>
+                    <li class="tech__item">JavaScript</li>
+                  </ul>
+                </div>
+                <div class="project__content">
+                  <p>Адаптивная вёрстка по макету Figma.</p>
+                </div>
+                <div class="project__actions">
+                  <h4 class="project__actions-title">Ссылки на проект:</h4>
+                  <div class="project__links">
+                    <a class="project__link button" href="https://kleosky.github.io/2513873-cat-energy-32/"
+                      target="_blank" rel="noopener noreferrer">Открыть проект</a>
+                    <a class="project__link button" href="https://github.com/KleoSky/2513873-cat-energy-32"
+                      target="_blank" rel="noopener noreferrer">Исходный код</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project__card-image project__card-image--one">
-              <picture>
-                <source media="(min-width: 1440px)" width="695" height="345" type="image/webp"
-                  srcset="images/cat-enegry-image@1x.webp 1x, images/cat-enegry-image@2x.webp 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
-                  srcset="images/cat-enegry-image@1x.webp 1x, images/cat-enegry-image@2x.webp 2x">
-                <source width="320" height="320" type="image/webp"
-                  srcset="images/cat-enegry-image@1x.webp 1x, images/cat-enegry-image@2x.webp 2x">
-                <source media="(min-width: 1440px)" width="695" height="345" type="image/jpeg"
-                  srcset="images/cat-enegry-image@1x.jpg 1x, images/cat-enegry-image@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
-                  srcset="images/cat-enegry-image@1x.jpg 1x, images/cat-enegry-image@2x.jpg 2x">
-                <img src="images/cat-enegry-image@1x.jpg" srcset="images/cat-enegry-image@2x.jpg 2x" width="320"
-                  height="280" alt="Главная страница проекта Cat Energy">
-              </picture>
-            </div>
-          </section>
-          <section class="projects__card project">
-            <h3 class="project__title">Kekstagram</h3>
-            <div class="project__card-content">
-              <div class="project__header">
-                <p class="project__subtitle">Первый опыт js-разработки</p>
-                <p class="project__date">
-                  Выполняла c <time datetime="2025-09-15">15 сентября</time> по <time datetime="2025-12-16">16 декабря
-                    2024 года</time>
-                </p>
+              <div class="project__card-image project__card-image--one">
+                <picture>
+                  <source media="(min-width: 1440px)" width="695" height="345" type="image/webp"
+                    srcset="images/cat-enegry-image@1x.webp 1x, images/cat-enegry-image@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
+                    srcset="images/cat-enegry-image@1x.webp 1x, images/cat-enegry-image@2x.webp 2x">
+                  <source width="320" height="320" type="image/webp"
+                    srcset="images/cat-enegry-image@1x.webp 1x, images/cat-enegry-image@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="695" height="345" type="image/jpeg"
+                    srcset="images/cat-enegry-image@1x.jpg 1x, images/cat-enegry-image@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
+                    srcset="images/cat-enegry-image@1x.jpg 1x, images/cat-enegry-image@2x.jpg 2x">
+                  <img src="images/cat-enegry-image@1x.jpg" srcset="images/cat-enegry-image@2x.jpg 2x" width="320"
+                    height="280" alt="Главная страница проекта Cat Energy">
+                </picture>
               </div>
-              <div class="project__meta tech">
-                <h4 class="tech__title">Используемые технологии:</h4>
-                <ul class="tech__list">
-                  <li class="tech__item">JavaScript</li>
-                </ul>
-              </div>
-              <div class="project__content">
-                <p>Разработка веб-интерфейса ресурса для загрузки и обработки фото</p>
-              </div>
-              <div class="project__actions">
-                <h4 class="project__actions-title">Ссылки на проект:</h4>
-                <div class="project__links">
-                  <a class="project__link button" href="https://kleosky.github.io/2513873-kekstagram-33/" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-                  <a class="project__link button" href="https://github.com/KleoSky/2513873-kekstagram-33" target="_blank" rel="noopener noreferrer">Исходный код</a>
+            </section>
+            <section class="projects__card project scroll-section">
+              <h3 class="project__title">Kekstagram</h3>
+              <div class="project__card-content">
+                <div class="project__header">
+                  <p class="project__subtitle">Первый опыт js-разработки</p>
+                  <p class="project__date">
+                    Выполняла c <time datetime="2025-09-15">15 сентября</time> по <time datetime="2025-12-16">16 декабря
+                      2024 года</time>
+                  </p>
+                </div>
+                <div class="project__meta tech">
+                  <h4 class="tech__title">Используемые технологии:</h4>
+                  <ul class="tech__list">
+                    <li class="tech__item">JavaScript</li>
+                  </ul>
+                </div>
+                <div class="project__content">
+                  <p>Разработка веб-интерфейса ресурса для загрузки и обработки фото</p>
+                </div>
+                <div class="project__actions">
+                  <h4 class="project__actions-title">Ссылки на проект:</h4>
+                  <div class="project__links">
+                    <a class="project__link button" href="https://kleosky.github.io/2513873-kekstagram-33/"
+                      target="_blank" rel="noopener noreferrer">Открыть проект</a>
+                    <a class="project__link button" href="https://github.com/KleoSky/2513873-kekstagram-33"
+                      target="_blank" rel="noopener noreferrer">Исходный код</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project__card-image project__card-image--two">
-              <picture>
-                <source media="(min-width: 1440px)" width="679" height="288" type="image/webp"
-                  srcset="images/kekstagram-image@1x.webp 1x, images/kekstagram-image@2x.webp 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
-                  srcset="images/kekstagram-image@1x.webp 1x, images/kekstagram-image@2x.webp 2x">
-                <source width="320" height="320" type="image/webp"
-                  srcset="images/kekstagram-image@1x.webp 1x, images/kekstagram-image@2x.webp 2x">
-                <source media="(min-width: 1440px)" width="679" height="288" type="image/jpeg"
-                  srcset="images/kekstagram-image@1x.jpg 1x, images/kekstagram-image@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
-                  srcset="images/kekstagram-image@1x.jpg 1x, images/kekstagram-image@2x.jpg 2x">
-                <img src="images/kekstagram-image@1x.jpg" srcset="images/kekstagram-image@2x.jpg 2x" width="320"
-                  height="280" alt="Главная страница проекта Kekstagram">
-              </picture>
-            </div>
-          </section>
-          <section class="projects__card project">
-            <h3 class="project__title">Drink2Go</h3>
-            <div class="project__card-content">
-              <div class="project__header">
-                <p class="project__subtitle">Первый опыт слайдеров</p>
-                <p class="project__date">
-                  Выполняла c <time datetime="2025-02-11">11 февраля</time> по <time datetime="2025-02-19">19 февраля
-                    2025 года</time>
-                </p>
+              <div class="project__card-image project__card-image--two">
+                <picture>
+                  <source media="(min-width: 1440px)" width="679" height="288" type="image/webp"
+                    srcset="images/kekstagram-image@1x.webp 1x, images/kekstagram-image@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
+                    srcset="images/kekstagram-image@1x.webp 1x, images/kekstagram-image@2x.webp 2x">
+                  <source width="320" height="320" type="image/webp"
+                    srcset="images/kekstagram-image@1x.webp 1x, images/kekstagram-image@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="679" height="288" type="image/jpeg"
+                    srcset="images/kekstagram-image@1x.jpg 1x, images/kekstagram-image@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
+                    srcset="images/kekstagram-image@1x.jpg 1x, images/kekstagram-image@2x.jpg 2x">
+                  <img src="images/kekstagram-image@1x.jpg" srcset="images/kekstagram-image@2x.jpg 2x" width="320"
+                    height="280" alt="Главная страница проекта Kekstagram">
+                </picture>
               </div>
-              <div class="project__meta tech">
-                <h4 class="tech__title">Используемые технологии:</h4>
-                <ul class="tech__list">
-                  <li class="tech__item">HTML5</li>
-                  <li class="tech__item">CSS3</li>
-                  <li class="tech__item">JavaScript</li>
-                  <li class="tech__item">noUiSlider</li>
-                </ul>
-              </div>
-              <div class="project__content">
-                <p>Простой лендинг на реализацию слайдеров и фильтрации в рамках Акселератора Html Academy</p>
-              </div>
-              <div class="project__actions">
-                <h4 class="project__actions-title">Ссылки на проект:</h4>
-                <div class="project__links">
-                  <a class="project__link button" href="https://kleosky.github.io/drink2go-kleo/" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-                  <a class="project__link button" href="https://github.com/KleoSky/drink2go-kleo" target="_blank" rel="noopener noreferrer">Исходный код</a>
+            </section>
+            <section class="projects__card project scroll-section">
+              <h3 class="project__title">Drink2Go</h3>
+              <div class="project__card-content">
+                <div class="project__header">
+                  <p class="project__subtitle">Первый опыт слайдеров</p>
+                  <p class="project__date">
+                    Выполняла c <time datetime="2025-02-11">11 февраля</time> по <time datetime="2025-02-19">19 февраля
+                      2025 года</time>
+                  </p>
+                </div>
+                <div class="project__meta tech">
+                  <h4 class="tech__title">Используемые технологии:</h4>
+                  <ul class="tech__list">
+                    <li class="tech__item">HTML5</li>
+                    <li class="tech__item">CSS3</li>
+                    <li class="tech__item">JavaScript</li>
+                    <li class="tech__item">noUiSlider</li>
+                  </ul>
+                </div>
+                <div class="project__content">
+                  <p>Простой лендинг на реализацию слайдеров и фильтрации в рамках Акселератора Html Academy</p>
+                </div>
+                <div class="project__actions">
+                  <h4 class="project__actions-title">Ссылки на проект:</h4>
+                  <div class="project__links">
+                    <a class="project__link button" href="https://kleosky.github.io/drink2go-kleo/" target="_blank"
+                      rel="noopener noreferrer">Открыть проект</a>
+                    <a class="project__link button" href="https://github.com/KleoSky/drink2go-kleo" target="_blank"
+                      rel="noopener noreferrer">Исходный код</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project__card-image project__card-image--three">
-              <picture>
-                <source media="(min-width: 1440px)" width="690" height="398" type="image/webp"
-                  srcset="images/drink2go-image@1x.webp 1x, images/drink2go-image@2x.webp 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
-                  srcset="images/drink2go-image@1x.webp 1x, images/drink2go-image@2x.webp 2x">
-                <source width="320" height="320" type="image/webp"
-                  srcset="images/drink2go-image@1x.webp 1x, images/drink2go-image@2x.webp 2x">
-                <source media="(min-width: 1440px)" width="690" height="398" type="image/jpeg"
-                  srcset="images/drink2go-image@1x.jpg 1x, images/drink2go-image@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
-                  srcset="images/drink2go-image@1x.jpg 1x, images/drink2go-image@2x.jpg 2x">
-                <img src="images/drink2go-image@1x.jpg" srcset="images/drink2go-image@2x.jpg 2x" width="320"
-                  height="280" alt="Главная страница проекта Drink2Go">
-              </picture>
-            </div>
-          </section>
-          <section class="projects__card project">
-            <h3 class="project__title">SYPERGYM</h3>
-            <div class="project__card-content">
-              <div class="project__header">
-                <p class="project__subtitle">Первый опыт аккордеонов, табов и встраивания видео</p>
-                <p class="project__date">
-                  Выполняла c <time datetime="2025-03-01">1 марта</time> по <time datetime="2025-03-31">31 марта 2025
-                    года</time>
-                </p>
+              <div class="project__card-image project__card-image--three">
+                <picture>
+                  <source media="(min-width: 1440px)" width="690" height="398" type="image/webp"
+                    srcset="images/drink2go-image@1x.webp 1x, images/drink2go-image@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
+                    srcset="images/drink2go-image@1x.webp 1x, images/drink2go-image@2x.webp 2x">
+                  <source width="320" height="320" type="image/webp"
+                    srcset="images/drink2go-image@1x.webp 1x, images/drink2go-image@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="690" height="398" type="image/jpeg"
+                    srcset="images/drink2go-image@1x.jpg 1x, images/drink2go-image@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
+                    srcset="images/drink2go-image@1x.jpg 1x, images/drink2go-image@2x.jpg 2x">
+                  <img src="images/drink2go-image@1x.jpg" srcset="images/drink2go-image@2x.jpg 2x" width="320"
+                    height="280" alt="Главная страница проекта Drink2Go">
+                </picture>
               </div>
-              <div class="project__meta tech">
-                <h4 class="tech__title">Используемые технологии:</h4>
-                <ul class="tech__list">
-                  <li class="tech__item">HTML5</li>
-                  <li class="tech__item">CSS3</li>
-                  <li class="tech__item">JavaScript</li>
-                  <li class="tech__item">Swiper</li>
-                </ul>
-              </div>
-              <div class="project__content">
-                <p>Лендиг фитнесс-клуба с реализацией фильтров, слайдеров и валидации формы в рамках Грейдирования
-                  Html Academy</p>
-              </div>
-              <div class="project__actions">
-                <h4 class="project__actions-title">Ссылки на проект:</h4>
-                <div class="project__links">
-                  <a class="project__link button" href="https://kleosky.github.io/fitness-pablic/" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-                  <a class="project__link button" href="https://github.com/KleoSky/fitness-pablic" target="_blank" rel="noopener noreferrer">Исходный код</a>
+            </section>
+            <section class="projects__card project scroll-section">
+              <h3 class="project__title">SYPERGYM</h3>
+              <div class="project__card-content">
+                <div class="project__header">
+                  <p class="project__subtitle">Первый опыт аккордеонов, табов и встраивания видео</p>
+                  <p class="project__date">
+                    Выполняла c <time datetime="2025-03-01">1 марта</time> по <time datetime="2025-03-31">31 марта 2025
+                      года</time>
+                  </p>
+                </div>
+                <div class="project__meta tech">
+                  <h4 class="tech__title">Используемые технологии:</h4>
+                  <ul class="tech__list">
+                    <li class="tech__item">HTML5</li>
+                    <li class="tech__item">CSS3</li>
+                    <li class="tech__item">JavaScript</li>
+                    <li class="tech__item">Swiper</li>
+                  </ul>
+                </div>
+                <div class="project__content">
+                  <p>Лендиг фитнесс-клуба с реализацией фильтров, слайдеров и валидации формы в рамках Грейдирования
+                    Html Academy</p>
+                </div>
+                <div class="project__actions">
+                  <h4 class="project__actions-title">Ссылки на проект:</h4>
+                  <div class="project__links">
+                    <a class="project__link button" href="https://kleosky.github.io/fitness-pablic/" target="_blank"
+                      rel="noopener noreferrer">Открыть проект</a>
+                    <a class="project__link button" href="https://github.com/KleoSky/fitness-pablic" target="_blank"
+                      rel="noopener noreferrer">Исходный код</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project__card-image project__card-image--four">
-              <picture>
-                <source media="(min-width: 1440px)" width="601" height="379" type="image/webp"
-                  srcset="images/fitness-image@1x.webp 1x, images/fitness-image@2x.webp 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
-                  srcset="images/fitness-image@1x.webp 1x, images/fitness-image@2x.webp 2x">
-                <source width="320" height="320" type="image/webp"
-                  srcset="images/fitness-image@1x.webp 1x, images/fitness-image@2x.webp 2x">
-                <source media="(min-width: 1440px)" width="601" height="379" type="image/jpeg"
-                  srcset="images/fitness-image@1x.jpg 1x, images/fitness-image@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
-                  srcset="images/fitness-image@1x.jpg 1x, images/fitness-image@2x.jpg 2x">
-                <img src="images/fitness-image@1x.jpg" srcset="images/fitness-image@2x.jpg 2x" width="320" height="280"
-                  alt="Главная страница проекта Sypergym">
-              </picture>
-            </div>
-          </section>
-          <section class="projects__card project">
-            <h3 class="project__title">Internship</h3>
-            <div class="project__card-content">
-              <div class="project__header">
-                <p class="project__subtitle">Опыт нестандартных слайдеров и валидации нескольких форм</p>
-                <p class="project__date">
-                  Выполняла c <time datetime="2025-05-15">15 мая</time> по <time datetime="2025-06-16">16 июня 2025
-                    года</time>
-                </p>
+              <div class="project__card-image project__card-image--four">
+                <picture>
+                  <source media="(min-width: 1440px)" width="601" height="379" type="image/webp"
+                    srcset="images/fitness-image@1x.webp 1x, images/fitness-image@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
+                    srcset="images/fitness-image@1x.webp 1x, images/fitness-image@2x.webp 2x">
+                  <source width="320" height="320" type="image/webp"
+                    srcset="images/fitness-image@1x.webp 1x, images/fitness-image@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="601" height="379" type="image/jpeg"
+                    srcset="images/fitness-image@1x.jpg 1x, images/fitness-image@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
+                    srcset="images/fitness-image@1x.jpg 1x, images/fitness-image@2x.jpg 2x">
+                  <img src="images/fitness-image@1x.jpg" srcset="images/fitness-image@2x.jpg 2x" width="320" height="280"
+                    alt="Главная страница проекта Sypergym">
+                </picture>
               </div>
-              <div class="project__meta tech">
-                <h4 class="tech__title">Используемые технологии:</h4>
-                <ul class="tech__list">
-                  <li class="tech__item">HTML5</li>
-                  <li class="tech__item">CSS3</li>
-                  <li class="tech__item">JavaScript</li>
-                  <li class="tech__item">Swiper</li>
-                </ul>
-              </div>
-              <div class="project__content">
-                <p>Лендиг программы "Стажировка" с нестандартным дизайном сеток и слайдеров, аккордиона, форм в рамках
-                  Грейдирования Html Academy</p>
-              </div>
-              <div class="project__actions">
-                <h4 class="project__actions-title">Ссылки на проект:</h4>
-                <div class="project__links">
-                  <a class="project__link button" href="https://kleosky.github.io/internship__2/" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-                  <a class="project__link button" href="https://github.com/KleoSky/internship__2" target="_blank" rel="noopener noreferrer">Исходный код</a>
+            </section>
+            <section class="projects__card project scroll-section">
+              <h3 class="project__title">Internship</h3>
+              <div class="project__card-content">
+                <div class="project__header">
+                  <p class="project__subtitle">Опыт нестандартных слайдеров и валидации нескольких форм</p>
+                  <p class="project__date">
+                    Выполняла c <time datetime="2025-05-15">15 мая</time> по <time datetime="2025-06-16">16 июня 2025
+                      года</time>
+                  </p>
+                </div>
+                <div class="project__meta tech">
+                  <h4 class="tech__title">Используемые технологии:</h4>
+                  <ul class="tech__list">
+                    <li class="tech__item">HTML5</li>
+                    <li class="tech__item">CSS3</li>
+                    <li class="tech__item">JavaScript</li>
+                    <li class="tech__item">Swiper</li>
+                  </ul>
+                </div>
+                <div class="project__content">
+                  <p>Лендиг программы "Стажировка" с нестандартным дизайном сеток и слайдеров, аккордиона, форм в рамках
+                    Грейдирования Html Academy</p>
+                </div>
+                <div class="project__actions">
+                  <h4 class="project__actions-title">Ссылки на проект:</h4>
+                  <div class="project__links">
+                    <a class="project__link button" href="https://kleosky.github.io/internship__2/" target="_blank"
+                      rel="noopener noreferrer">Открыть проект</a>
+                    <a class="project__link button" href="https://github.com/KleoSky/internship__2" target="_blank"
+                      rel="noopener noreferrer">Исходный код</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project__card-image project__card-image--five">
-              <picture>
-                <source media="(min-width: 1440px)" width="667" height="399" type="image/webp"
-                  srcset="images/internship-image@1x.webp 1x, images/internship-image@2x.webp 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
-                  srcset="images/internship-image@1x.webp 1x, images/internship-image@2x.webp 2x">
-                <source width="320" height="320" type="image/webp"
-                  srcset="images/internship-image@1x.webp 1x, images/internship-image@2x.webp 2x">
-                <source media="(min-width: 1440px)" width="667" height="399" type="image/jpeg"
-                  srcset="images/internship-image@1x.jpg 1x, images/internship-image@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
-                  srcset="images/internship-image@1x.jpg 1x, images/internship-image@2x.jpg 2x">
-                <img src="images/internship-image@1x.jpg" srcset="images/internship-image@2x.jpg 2x" width="320"
-                  height="280" alt="Главная страница проекта Internship">
-              </picture>
-            </div>
-          </section>
-          <section class="projects__card project">
-            <h3 class="project__title">Let`s-GO</h3>
-            <div class="project__card-content">
-              <div class="project__header">
-                <p class="project__subtitle">
-                  Опыт кастомных чекбоксов, скриптов фильтрации, сложных сеток, скейлинга, шаблонизатора
-                </p>
-                <p class="project__date">
-                  Выполняла c <time datetime="2025-09-23">23 сентября</time> по <time datetime="2025-10-05">05 октября
-                    2025 года</time>
-                </p>
+              <div class="project__card-image project__card-image--five">
+                <picture>
+                  <source media="(min-width: 1440px)" width="667" height="399" type="image/webp"
+                    srcset="images/internship-image@1x.webp 1x, images/internship-image@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
+                    srcset="images/internship-image@1x.webp 1x, images/internship-image@2x.webp 2x">
+                  <source width="320" height="320" type="image/webp"
+                    srcset="images/internship-image@1x.webp 1x, images/internship-image@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="667" height="399" type="image/jpeg"
+                    srcset="images/internship-image@1x.jpg 1x, images/internship-image@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
+                    srcset="images/internship-image@1x.jpg 1x, images/internship-image@2x.jpg 2x">
+                  <img src="images/internship-image@1x.jpg" srcset="images/internship-image@2x.jpg 2x" width="320"
+                    height="280" alt="Главная страница проекта Internship">
+                </picture>
               </div>
-              <div class="project__meta tech">
-                <h4 class="tech__title">Используемые технологии:</h4>
-                <ul class="tech__list">
-                  <li class="tech__item">HTML5, Pug</li>
-                  <li class="tech__item">CSS3</li>
-                  <li class="tech__item">JavaScript</li>
-                  <li class="tech__item">Swiper</li>
-                </ul>
-              </div>
-              <div class="project__content">
-                <p>Адаптивный двухстраничный сайт "Погнали!", выполненный в рамках стажировки в Лиге А и разрешённый к
-                  публикации, со сложными сетками, кастомными фильтрами и чекбоксами, адаптивом с помощью функций
-                  scaling и работой c шаблонизатором pug</p>
-              </div>
-              <div class="project__actions">
-                <h4 class="project__actions-title">Ссылки на проект:</h4>
-                <div class="project__links">
-                  <a class="project__link button" href="https://kleosky.github.io/Let-s-GO-pablic/" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-                  <a class="project__link button" href="https://github.com/KleoSky/Let-s-GO-pablic" target="_blank" rel="noopener noreferrer">Исходный код</a>
+            </section>
+            <section class="projects__card project scroll-section">
+              <h3 class="project__title">Let`s-GO</h3>
+              <div class="project__card-content">
+                <div class="project__header">
+                  <p class="project__subtitle">
+                    Опыт кастомных чекбоксов, скриптов фильтрации, сложных сеток, скейлинга, шаблонизатора
+                  </p>
+                  <p class="project__date">
+                    Выполняла c <time datetime="2025-09-23">23 сентября</time> по <time datetime="2025-10-05">05 октября
+                      2025 года</time>
+                  </p>
+                </div>
+                <div class="project__meta tech">
+                  <h4 class="tech__title">Используемые технологии:</h4>
+                  <ul class="tech__list">
+                    <li class="tech__item">HTML5, Pug</li>
+                    <li class="tech__item">CSS3</li>
+                    <li class="tech__item">JavaScript</li>
+                    <li class="tech__item">Swiper</li>
+                  </ul>
+                </div>
+                <div class="project__content">
+                  <p>Адаптивный двухстраничный сайт "Погнали!", выполненный в рамках стажировки в Лиге А и разрешённый к
+                    публикации, со сложными сетками, кастомными фильтрами и чекбоксами, адаптивом с помощью функций
+                    scaling и работой c шаблонизатором pug</p>
+                </div>
+                <div class="project__actions">
+                  <h4 class="project__actions-title">Ссылки на проект:</h4>
+                  <div class="project__links">
+                    <a class="project__link button" href="https://kleosky.github.io/Let-s-GO-pablic/" target="_blank"
+                      rel="noopener noreferrer">Открыть проект</a>
+                    <a class="project__link button" href="https://github.com/KleoSky/Let-s-GO-pablic" target="_blank"
+                      rel="noopener noreferrer">Исходный код</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project__card-image project__card-image--six">
-              <picture>
-                <source media="(min-width: 1440px)" width="690" height="398" type="image/webp"
-                  srcset="images/lets-go-image@1x.webp 1x, images/lets-go-image@2x.webp 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
-                  srcset="only/lets-go-image@1x.webp 1x, images/lets-go-image@2x.webp 2x">
-                <source width="320" height="320" type="image/webp"
-                  srcset="only/lets-go-image@1x.webp 1x, images/lets-go-image@2x.webp 2x">
-                <source media="(min-width: 1440px)" width="690" height="398" type="image/jpeg"
-                  srcset="images/lets-go-image@1x.jpg 1x, images/lets-go-image@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
-                  srcset="images/lets-go-image@1x.jpg 1x, images/lets-go-image@2x.jpg 2x">
-                <img src="images/lets-go-image@1x.jpg" srcset="images/lets-go-image@2x.jpg 2x" width="320" height="280"
-                  alt="Главная страница проекта Погнали!">
-              </picture>
-            </div>
-          </section>
-          <section class="projects__card project">
-            <h3 class="project__title">ONLY</h3>
-            <div class="project__card-content">
-              <div class="project__header">
-                <p class="project__subtitle">Опыт кастомного слайдера, сложной анимации</p>
-                <p class="project__date">
-                  Выполняла c <time datetime="2025-11-24">24 ноября</time> по <time datetime="2025-12-09">9 декабря 2025
-                    года</time>
-                </p>
+              <div class="project__card-image project__card-image--six">
+                <picture>
+                  <source media="(min-width: 1440px)" width="690" height="398" type="image/webp"
+                    srcset="images/lets-go-image@1x.webp 1x, images/lets-go-image@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
+                    srcset="only/lets-go-image@1x.webp 1x, images/lets-go-image@2x.webp 2x">
+                  <source width="320" height="320" type="image/webp"
+                    srcset="only/lets-go-image@1x.webp 1x, images/lets-go-image@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="690" height="398" type="image/jpeg"
+                    srcset="images/lets-go-image@1x.jpg 1x, images/lets-go-image@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
+                    srcset="images/lets-go-image@1x.jpg 1x, images/lets-go-image@2x.jpg 2x">
+                  <img src="images/lets-go-image@1x.jpg" srcset="images/lets-go-image@2x.jpg 2x" width="320" height="280"
+                    alt="Главная страница проекта Погнали!">
+                </picture>
               </div>
-              <div class="project__meta tech">
-                <h4 class="tech__title">Используемые технологии:</h4>
-                <ul class="tech__list">
-                  <li class="tech__item">HTML5</li>
-                  <li class="tech__item">CSS3</li>
-                  <li class="tech__item">JavaScript</li>
-                </ul>
-              </div>
-              <div class="project__content">
-                <p>Адаптивный сайт для digital-агентства в рамках Чемпионата по вёрстке, выполненный по реальному
-                  продакшн-макету, со сложными сетками, анимациями и кастомным слайдером.</p>
-              </div>
-              <div class="project__actions">
-                <h4 class="project__actions-title">Ссылки на проект:</h4>
-                <div class="project__links">
-                  <a class="project__link button" href="https://kleosky.github.io/ONLY/" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-                  <a class="project__link button" href="https://github.com/KleoSky/ONLY" target="_blank" rel="noopener noreferrer">Исходный код</a>
+            </section>
+            <section class="projects__card project scroll-section">
+              <h3 class="project__title">ONLY</h3>
+              <div class="project__card-content">
+                <div class="project__header">
+                  <p class="project__subtitle">Опыт кастомного слайдера, сложной анимации</p>
+                  <p class="project__date">
+                    Выполняла c <time datetime="2025-11-24">24 ноября</time> по <time datetime="2025-12-09">9 декабря 2025
+                      года</time>
+                  </p>
+                </div>
+                <div class="project__meta tech">
+                  <h4 class="tech__title">Используемые технологии:</h4>
+                  <ul class="tech__list">
+                    <li class="tech__item">HTML5</li>
+                    <li class="tech__item">CSS3</li>
+                    <li class="tech__item">JavaScript</li>
+                  </ul>
+                </div>
+                <div class="project__content">
+                  <p>Адаптивный сайт для digital-агентства в рамках Чемпионата по вёрстке, выполненный по реальному
+                    продакшн-макету, со сложными сетками, анимациями и кастомным слайдером.</p>
+                </div>
+                <div class="project__actions">
+                  <h4 class="project__actions-title">Ссылки на проект:</h4>
+                  <div class="project__links">
+                    <a class="project__link button" href="https://kleosky.github.io/ONLY/" target="_blank"
+                      rel="noopener noreferrer">Открыть проект</a>
+                    <a class="project__link button" href="https://github.com/KleoSky/ONLY" target="_blank"
+                      rel="noopener noreferrer">Исходный код</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project__card-image project__card-image--seven">
-              <picture>
-                <source media="(min-width: 1440px)" width="700" height="399" type="image/webp"
-                  srcset="images/only-image@1x.webp 1x, images/only-image@2x.webp 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
-                  srcset="only/only-image@1x.webp 1x, images/only-image@2x.webp 2x">
-                <source width="320" height="320" type="image/webp"
-                  srcset="only/only-image@1x.webp 1x, images/only-image@2x.webp 2x">
-                <source media="(min-width: 1440px)" width="700" height="399" type="image/jpeg"
-                  srcset="images/only-image@1x.jpg 1x, images/only-image@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
-                  srcset="images/only-image@1x.jpg 1x, images/only-image@2x.jpg 2x">
-                <img src="images/only-image@1x.jpg" srcset="images/only-image@2x.jpg 2x" width="320" height="280"
-                  alt="Главная страница проекта Only.digital">
-              </picture>
-            </div>
-          </section>
+              <div class="project__card-image project__card-image--seven">
+                <picture>
+                  <source media="(min-width: 1440px)" width="700" height="399" type="image/webp"
+                    srcset="images/only-image@1x.webp 1x, images/only-image@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/webp"
+                    srcset="only/only-image@1x.webp 1x, images/only-image@2x.webp 2x">
+                  <source width="320" height="320" type="image/webp"
+                    srcset="only/only-image@1x.webp 1x, images/only-image@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="700" height="399" type="image/jpeg"
+                    srcset="images/only-image@1x.jpg 1x, images/only-image@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="678" height="345" type="image/jpeg"
+                    srcset="images/only-image@1x.jpg 1x, images/only-image@2x.jpg 2x">
+                  <img src="images/only-image@1x.jpg" srcset="images/only-image@2x.jpg 2x" width="320" height="280"
+                    alt="Главная страница проекта Only.digital">
+                </picture>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
       <div class="main__sertificates certificates">
-        <h2 class="certificates__title section-title">Мои сертификаты</h2>
-        <ul class="certificates__list">
+        <button class="certificates__title section-button" type="button" data-section="certificates-section">Мои сертификаты</button>
+        <ul class="certificates__list section-content section-closed" id="certificates-section">
           <li class="certificates__item">
             <a class="certificates__link" href="certificates/certificate-html&css-start.pdf" target="_blank"
               rel="noopener noreferrer">
@@ -519,24 +549,24 @@
         <p class="footer__copyright">©Неброева Вероника.<br>Все проекты — примеры моей работы.</p>
         <div class="footer__contacts">
           <p class="footer__note">Связаться со мной:</p>
-        <div class="footer__contacts-info-wrapper">
-          <div class="footer__contacts-info">
-            <span>Репозитории:</span>
-            <a href="https://github.com/KleoSky">GitHub</a>
+          <div class="footer__contacts-info-wrapper">
+            <div class="footer__contacts-info">
+              <span>Репозитории:</span>
+              <a href="https://github.com/KleoSky">GitHub</a>
+            </div>
+            <div class="footer__contacts-info">
+              <span>Электронная почта:</span>
+              <a href="mailto:v-kleo@yandex.ru">v-kleo@yandex.ru</a>
+            </div>
+            <div class="footer__contacts-info">
+              <span>Telegram:</span>
+              <a href="https://t.me/KleoSky" target="_blank">@KleoSky</a>
+            </div>
+            <div class="footer__contacts-info">
+              <span>Телефон:</span>
+              <a href="tel:89607974814">+7-960-797-4814</a>
+            </div>
           </div>
-          <div class="footer__contacts-info">
-            <span>Электронная почта:</span>
-            <a href="mailto:v-kleo@yandex.ru">v-kleo@yandex.ru</a>
-          </div>
-          <div class="footer__contacts-info">
-            <span>Telegram:</span>
-            <a href="https://t.me/KleoSky" target="_blank">@KleoSky</a>
-          </div>
-          <div class="footer__contacts-info">
-            <span>Телефон:</span>
-            <a href="tel:89607974814">+7-960-797-4814</a>
-          </div>
-        </div>
         </div>
       </div>
     </footer>
