@@ -10,6 +10,22 @@
   row-gap: size(20px);
   border-radius: $section-radius;
 
+  @include max-tablet {
+    max-width: none;
+  }
+
+  @include tablet {
+    margin-bottom: size-tablet(30px);
+    padding: size-tablet(25px);
+    row-gap: size-tablet(20px);
+  }
+
+  @include mobile {
+    margin-bottom: size-mobile(20px);
+    padding: size-mobile(20px) size-mobile(15px);
+    row-gap: size-mobile(15px);
+  }
+
   &__title,
   &__picture {
     will-change: opacity, transform;
@@ -22,23 +38,54 @@
     text-align: center;
     margin: 0;
     animation: slideUp 1.8s ease forwards;
+
+    @include tablet {
+      max-width: size-tablet(650px);
+      font-size: size-tablet(24px);
+    }
+
+    @include mobile {
+      max-width: none;
+      font-size: size-mobile(18px);
+    }
   }
 
   &__picture {
     width: size(262px);
     height: size(450px);
+    border-radius: $picture-radius;
     animation: scaleFromCenter 1.7s ease forwards;
+
+    @include tablet {
+      width: size-tablet(204px);
+      height: size-tablet(350px);
+    }
+
+    @include mobile {
+      width: size-mobile(260px);
+      height: size-mobile(447px);
+    }
 
     img {
       border-radius: $picture-radius;
       transition: transform 0.3s ease;
       will-change: transform;
+
+      @include desktop {
+        width: size(262px);
+        height: size(450px);
+      }
+
+      @include mobile {
+        width: size-mobile(260px);
+        height: size-mobile(447px);
+      }
     }
 
     &:hover,
     &:focus,
     &:focus-visible {
-      img{
+      img {
         transform: scale(1.05);
         transform-origin: center center;
       }
@@ -67,5 +114,19 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@include tablet {
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

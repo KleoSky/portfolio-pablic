@@ -4,12 +4,32 @@
   align-items: center;
   row-gap: size(40px);
 
+  @include tablet {
+    font-size: size-tablet($fz-tablet);
+  }
+
+  @include mobile {
+    font-size: size-mobile($fz-mobile);
+  }
+
   &__wrapper {
     max-width: size(1000px);
     margin: 0 auto;
     padding: size(10px) size(50px) size(50px);
     background-color: $background-section;
     border-radius: $section-radius;
+
+    @include max-tablet {
+      max-width: none;
+    }
+
+    @include tablet {
+      padding: size-tablet(10px) size-tablet(25px) size-tablet(25px);
+    }
+
+    @include mobile {
+      padding: size-mobile(10px) size-mobile(20px);
+    }
   }
 
   h3 {

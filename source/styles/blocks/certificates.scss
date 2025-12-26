@@ -5,6 +5,10 @@
   align-items: center;
   row-gap: size(50px);
 
+  @include mobile {
+    margin-bottom: size-mobile(40px);
+  }
+
   &__list {
     width: max-content;
     margin: 0 auto;
@@ -12,6 +16,20 @@
     list-style: none;
     background-color: $background-section;
     border-radius: $section-radius;
+
+    @include max-tablet {
+      width: 100%;
+    }
+
+    @include tablet {
+      padding: size-tablet(25px);
+    }
+
+    @include mobile {
+      padding: size-mobile(20px);
+      flex-direction: column;
+      row-gap: size-mobile(10px);
+    }
   }
 
   &__link {
@@ -23,22 +41,50 @@
     position: relative;
     transition: opacity 0.5s ease;
 
+    @include tablet-etalon {
+      br {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      font-size: size-tablet($fz-tablet);
+    }
+
+    @include mobile {
+      font-size: size-mobile($fz-mobile);
+
+      span {
+        display: none;
+      }
+    }
+
     &::after {
       content: '';
       position: absolute;
       left: 0;
       bottom: size(-3px);
       width: 100%;
-      height: 1px;
+      height: 2px;
       background: repeating-linear-gradient(
         90deg,
         currentColor,
-        currentColor 3px,
-        transparent 3px,
-        transparent 6px
+        currentColor size(5px),
+        transparent size(5px),
+        transparent size(8px)
       );
       clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
       transition: clip-path 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+
+      @include tablet {
+        background: repeating-linear-gradient(
+        90deg,
+        currentColor,
+        currentColor size-tablet(5px),
+        transparent size-tablet(5px),
+        transparent size-tablet(8px)
+      );
+      }
     }
 
     &:hover,
@@ -61,4 +107,8 @@
 
 .certificates__list.section-opened {
   display: block;
+
+  @include mobile {
+    display: flex;
+  }
 }

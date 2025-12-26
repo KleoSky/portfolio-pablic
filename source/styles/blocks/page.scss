@@ -3,6 +3,14 @@
   flex-direction: column;
   min-height: 100vh;
   padding: size(20px) size(40px);
+
+  @include tablet {
+    padding: size-tablet(15px) size-tablet(20px);
+  }
+
+  @include mobile {
+    padding: size-mobile(15px);
+  }
 }
 
 .page__main {

@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   row-gap: size(40px);
+
+  @include tablet {
+    row-gap: size-tablet(30px);
+  }
+
+  @include mobile {
+    row-gap: size-mobile(20px);
+  }
 }
 
 .projects__wrapper.section-closed {
@@ -13,4 +21,9 @@
   display: flex;
   flex-direction: column;
   row-gap: size(40px);
+
+  @include tablet {
+    margin-bottom: size-tablet(30px);
+    row-gap: size-tablet(30px);
+  }
 }

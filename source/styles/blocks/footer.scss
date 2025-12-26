@@ -6,6 +6,25 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include tablet {
+      font-size: size-tablet($fz-mobile);
+      padding-bottom: size-tablet(30px);
+    }
+
+    @include mobile {
+      font-size: size-mobile($fz-tablet);
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: size-mobile(20px);
+    }
+  }
+
+  &__copyright {
+    @include mobile {
+      font-size: size-mobile($fz-mobile);
+      margin: 0;
+    }
   }
 
   &__note {
@@ -14,6 +33,16 @@
     text-decoration-style: dashed;
     text-decoration-thickness: 1px;
     text-underline-offset: size(5px);
+
+    @include tablet {
+      font-size: size-tablet($fz-tablet);
+      text-underline-offset: size-tablet(5px);
+    }
+
+    @include mobile {
+      font-size: size-mobile(18px);
+      margin: 0;
+    }
   }
 
   &__contacts {
@@ -21,6 +50,15 @@
     justify-content: center;
     align-items: center;
     gap: size(25px);
+
+    @include tablet {
+      gap: size-tablet(15px);
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: size-mobile(16px);
+    }
 
     a {
       line-height: 1.43;
@@ -31,6 +69,10 @@
       display: block;
       transition: transform 0.3s ease;
       will-change: transform;
+
+      @include tablet {
+        text-underline-offset: size-tablet(5px);
+      }
 
       &:hover,
       &:focus,
@@ -45,5 +87,9 @@
     justify-content: flex-start;
     align-items: center;
     gap: size(8px);
+
+    @include tablet {
+      gap: size-tablet(5px);
+    }
   }
 }

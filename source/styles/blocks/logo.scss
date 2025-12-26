@@ -1,12 +1,30 @@
 .logo {
   display: flex;
   align-items: center;
-  column-gap: size(20px);
+
+  @include desktop {
+    column-gap: size(20px);
+  }
+
+  @include tablet {
+    column-gap: size-tablet(20px);
+  }
+
+  @include mobile {
+    width: 100%;
+    justify-content: space-between;
+  }
 
   &__link {
     border-radius: $picture-radius;
     transition: transform 0.3s ease;
     will-change: transform;
+
+    @include mobile {
+      width: size-mobile(40px);
+      height: size-mobile(40px);
+      border-radius: 12px;
+    }
 
     &:hover,
     &:focus,
@@ -19,6 +37,17 @@
     min-width: size(50px);
     height: size(50px);
     border-radius: 20px;
+
+    @include tablet {
+      min-width: size-tablet(40px);
+      height: size-tablet(40px);
+    }
+
+    @include mobile {
+      width: size-mobile(40px);
+      height: size-mobile(40px);
+      border-radius: 12px;
+    }
   }
 
   &__text {
@@ -28,6 +57,14 @@
     color: inherit;
     transition: transform 0.3s ease;
     will-change: transform;
+
+    @include tablet {
+      font-size: size-tablet(25px);
+    }
+
+    @include mobile {
+      font-size: size-mobile(20px);
+    }
 
     &:hover,
     &:focus,

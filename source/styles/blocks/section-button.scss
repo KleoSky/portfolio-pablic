@@ -11,6 +11,18 @@
   background-color: transparent;
   cursor: pointer;
 
+  @include tablet {
+    font-size: size-tablet(32px);
+    margin-top: size-tablet(30px);
+    padding: size-tablet(15px);
+  }
+
+  @include mobile {
+    font-size: size-mobile(21px);
+    margin-top: size-mobile(20px);
+    padding: size-mobile(15px);
+  }
+
   &:hover,
   &:focus,
   &:focus-visible {
